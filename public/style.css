@@ -59,6 +59,27 @@ textarea{
     max-width: 300px;
     position: relative;
 }
+.join-left-message {
+    padding: 10px;
+    border-radius: 4px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 40px auto;
+    font-weight: 700;
+}
+.join-left-message p span{
+    color: #fff;
+    text-transform: uppercase;
+}
+.joined{
+   background: rgb(25, 184, 1);
+   color: #e9eafd;
+}
+.left{
+    background: rgb(255, 24, 24);
+    color: #e9eafd;
+}
 .incoming{
     background: #8F8BE8;
     color: #fff;

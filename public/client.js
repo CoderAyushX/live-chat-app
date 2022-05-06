@@ -5,7 +5,7 @@ let messageArea = document.querySelector(".message-area");
 do {
   name = prompt("please enter your name");
 } while (!name);
-
+socket.emit('new-user', name);
 textarea.addEventListener("keyup", (e) => {
   if (e.key === "Enter") {
     sendMessage(e.target.value);
@@ -38,6 +38,18 @@ function appendMessage(msg, type) {
   mainDiv.innerHTML = markup;
   messageArea.appendChild(mainDiv)
 }
+function appendMessageForLeftJion(user, type, message) {
+  let mainDiv = document.createElement("div");
+  let classname = type;
+
+  mainDiv.classList.add(classname, "join-left-message");
+
+  let markup = `
+    <p><span>${user}</span> ${message}</p>
+`;
+  mainDiv.innerHTML = markup;
+  messageArea.appendChild(mainDiv)
+}
 
 
 //recive 
@@ -46,6 +58,15 @@ socket.on('message', (msg)=>{
     appendMessage(msg, "incoming");
     scrollToBottam();
 })
+socket.on('user-joined', (user)=>{
+  appendMessageForLeftJion(user, "joined", "has joined the chat");
+  scrollToBottam();
+})
+socket.on('left', (user)=>{
+  appendMessageForLeftJion(user, "left", "has left the chat");
+  scrollToBottam();
+})
+
 
 //auto scroll
 
