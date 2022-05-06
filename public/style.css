@@ -122,6 +122,9 @@ textarea{
     textarea{
         border-top: 4px solid pink;
     }
+    .join-left-message {
+        width: 95%;
+    }
     .message-area{
         height: 70vh;
     }
