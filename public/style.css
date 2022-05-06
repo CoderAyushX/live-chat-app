@@ -91,9 +91,9 @@ textarea{
         align-items: flex-start;
     }
     .brand{
-        padding: 5px;
+        padding: 12px;
     }
     .message-area{
-        height: 350px;
+        height: 60vh;
     }
   }
