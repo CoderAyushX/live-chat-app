@@ -15,7 +15,7 @@ body{
 }
 section.chat-section{
     width: 800px;
-    max-width: 90%;
+    max-width: 100%;
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
@@ -35,7 +35,7 @@ section.chat-section{
     width: 50px;
 }
 .message-area{
-    height: 60vh;
+    height: 500px;
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -86,3 +86,14 @@ textarea{
     display: none; /* for Chrome, Safari, and Opera */
   }
 
+  @media screen and (min-width: 720px) {
+    body{
+        align-items: flex-start;
+    }
+    .brand{
+        padding: 10px;
+    }
+    .message-area{
+        height: 350px;
+    }
+  }
