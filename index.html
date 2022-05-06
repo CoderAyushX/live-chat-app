@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>just chat</title>
+  </head>
+  <body>
+    <section class="chat-section">
+      <div class="brand">
+        <img
+          src="https://i.postimg.cc/4x5tSpLv/speech-bubble.png"
+          alt="icon-of-brand"
+        />
+        <h1>Just Chat</h1>
+      </div>
+      <div class="message-area">
+      </div>
+      <div>
+        <textarea id="textarea" cols="30" rows="1" placeholder="Write a message"></textarea>
+      </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
