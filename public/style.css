@@ -86,7 +86,7 @@ textarea{
     display: none; /* for Chrome, Safari, and Opera */
   }
 
-  @media screen and (min-width: 720px) {
+@media screen and (max-width: 720px) {
     body{
         align-items: flex-start;
     }
@@ -94,6 +94,6 @@ textarea{
         padding: 5px;
     }
     .message-area{
-        height: 300px;
+        height: 350px;
     }
   }
