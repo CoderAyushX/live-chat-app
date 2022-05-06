@@ -94,9 +94,10 @@ textarea{
     }
     .message {
         padding: 10px;
-        border-radius: 4px;
-        margin-bottom: 40px;
         max-width: 250px;
+    }
+    textarea{
+        border-top: 4px solid pink;
     }
     .message-area{
         height: 70vh;
