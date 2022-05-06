@@ -9,6 +9,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
     background: #f8f8f8;
     font-family: 'Roboto', sans-serif; 
 }
@@ -88,6 +89,7 @@ textarea{
 @media screen and (max-width: 720px) {
     body{
         align-items: flex-start;
+        min-height: auto;
     }
     .brand{
         padding: 12px;
