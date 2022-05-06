@@ -93,6 +93,12 @@ textarea{
     .brand{
         padding: 12px;
     }
+    .message {
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 40px;
+        max-width: 250px;
+    }
     .message-area{
         height: 60vh;
     }
